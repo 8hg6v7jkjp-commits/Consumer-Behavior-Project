@@ -121,6 +121,7 @@ device_options = {
 # WRITE DATA
 # =========================================================
 
+
 def write_data(filename, data):
 
     file_exists = os.path.exists(filename)
@@ -143,7 +144,14 @@ def write_data(filename, data):
                 "device_type"
             ])
 
-        writer.writerow(data)
+        # Convert None values to "None" so they don't create
+        # empty-looking fields in the CSV.
+        cleaned_data = [
+            "None" if value is None else value
+            for value in data
+        ]
+
+        writer.writerow(cleaned_data)
 
 
 # =========================================================
