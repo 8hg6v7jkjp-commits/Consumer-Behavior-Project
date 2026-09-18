@@ -1,7 +1,1 @@
 day_of_week,arrival_time,age_range,sex_male,content_purchased,attire_casual,attire_type,occupation,dine_in,device_type
-Friday,12:57,10-19,False,iced_drink,True,unemployed,False,
-Friday,13:02,20-29,True,pastry,True,pajamas,retail,True,phone
-Friday,14:14,60-69,True,dessert,True,fashion_casual,business,True,
-Friday,14:15,60-69,False,,True,fashion_casual,business,True,
-Friday,14:16,30-39,True,,True,streetwear,,True,
-Friday,14:17,50-59,False,,True,streetwear,,True,
